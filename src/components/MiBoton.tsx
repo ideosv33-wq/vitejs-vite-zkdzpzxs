@@ -1,6 +1,6 @@
 interface Props {
   texto: string;
-  alClick: () => void;
+  alClick?: () => void;
 }
 
 function MiBoton({ texto}: Props) {

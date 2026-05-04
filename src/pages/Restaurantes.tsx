@@ -1,13 +1,13 @@
 
-// Si tenés el componente en otro archivo, la importación iría acá:
+import { useState, useEffect } from 'react';
 import MiBoton from '../components/MiBoton';
 import { Link } from 'react-router-dom';
-import { iRestaurante } from '../types';
+import type { iRestaurante } from '../types';
 
 function Restaurantes() {
 
 // 1. La "Pizarra" (Memoria) Aquí guardaremos los datos Empezamos con un array vacío []. lo colocamos fuera dek useEffect porque necesitamos persistencia, useEffect dispara algo y se va ( a no ser que lo guarde)
-const [listaRestaurantes, setListaRestaurantes] = useState<iRestaurante[]>([]);
+const [_listaRestaurantes, _setListaRestaurantes] = useState<iRestaurante[]>([]);
 
 // 2. El "Disparador" (Efecto)
 // Este bloque se ejecuta una sola vez cuando la página termina de cargar.
