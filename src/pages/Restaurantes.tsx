@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import MiBoton from '../components/MiBoton';
 import { Link } from 'react-router-dom';
-import type { iRestaurante } from '../types';
+import { iRestaurante } from '../types';
 
 function Restaurantes() {
 
